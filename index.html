@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="download.png">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 style="text-align:center">
+      <marquee behavior="" direction="right"> Lab Task for Form Validation</marquee>
+    </h1>
+    <form action="javascript:void(0)">
+      <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" class="form-control" required="required" onfocus="reEnter()" onblur="enterName()" id="name" required placeholder="Enter Your Name">
+        <p id="name1"></p>
+      </div>
+      <div class="form-group">
+        <label for="Email">Email address</label>
+        <input type="email" class="form-control"  required="required" onfocus="reEnterMail()" id="email" onblur="enterEmail()" placeholder="Enter email">
+        <p id="mail1"></p>
+      </div>
+      <div class="form-group">
+        <label for="City">City</label>
+        <input type="text" class="form-control"  required="required" onfocus="reEnterCity()" onblur="enterMail()" id="city" on placeholder="Enter Your City">
+        <p id="city1"></p>
+      </div>
+      <div class="form-group">
+        <label for="Password">Password</label>
+        <input type="password" class="form-control"  required="required" onfocus="rePassword()" onblur="passwordAreaOne()"  id="password1" placeholder="Password">
+        <p id="password4"></p>
+      </div>
+      <div class="form-group">
+        <label for="Password">Confirm Password</label>
+        <input type="password" class="form-control"  required="required" onfocus="reConfirm()" onblur="passwordArea()" id="password2" placeholder="Confirm Password">
+        <p id="password3"></p>
+      </div>
+     
+      <button type="submit" class="btn btn-primary"  required="required" onclick="formHandler()">Submit</button>
+    </form>
+
+
+
+
+  </div>
+  <script src="java.js"></script>
+</body>
+
+</html>
